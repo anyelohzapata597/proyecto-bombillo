@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Demo educativo: encender y apagar una bombilla usando HTML, CSS y JS (claymorfismo, responsive, accesible).">
+  <title>Proyecto Bombillo — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <h1 class="title">Control de Bombillo</h1>
+
+    <section class="card" aria-labelledby="controls-title">
+      <div id="bulb" class="bulb" role="img" aria-label="Bombilla apagada"></div>
+
+      <div class="controls" id="controls" aria-live="polite">
+        <h2 id="controls-title" class="sr-only">Controles</h2>
+        <div id="status" class="sr-only" role="status" aria-live="polite">Bombilla apagada</div>
+        <button id="onBtn" class="btn btn-on">Encender</button>
+        <button id="offBtn" class="btn btn-off">Apagar</button>
+      </div>
+
+      <p class="hint">Usa los botones para encender o apagar la bombilla. Diseño responsive y estilo claymorfismo.</p>
+    </section>
+
+    <footer class="footer">Proyecto educativo — HTML · CSS · JS</footer>
+  </main>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
